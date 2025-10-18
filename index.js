@@ -8,7 +8,7 @@ const PORT = process.env.PORT || 5000;
 
 app.use(cors());
 
-const GNEWS_API_KEY = '1859b71b1b2c1ed873316b83d520fa4f';
+const GNEWS_API_KEY = process.env.GNEWS_API_KEY;
 
 app.get('/news', async (req, res) => {
   try {
